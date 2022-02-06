@@ -1,0 +1,3 @@
+.MuiSlider-thumbColorPrimary::after {
+    pointer-events: visible !important;
+}

@@ -7,4 +7,5 @@ export default {
   LEN_VALUES: 0,
   ZERO: 0,
   BASE_URL: `https://demo1429763.mockable.io`,
+  TITLE: "Normal range",
 };

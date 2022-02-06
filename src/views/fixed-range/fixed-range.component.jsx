@@ -7,7 +7,7 @@ import Range from "../../components/range/range.component";
 // Constants
 import constants from "./constants/fixed-range.constants";
 // Styles
-import { Wrapper } from "./fixed-range.component.styled";
+import { Wrapper, Title } from "./fixed-range.component.styled";
 // Hooks
 import useRangeHook from "./hooks/fixed-range.hook";
 
@@ -16,6 +16,10 @@ const FixedRange = () => {
 
   return (
     <Wrapper>
+      <Title>
+        {constants.TITLE}
+        <hr />
+      </Title>
       <Box>
         {marks.length > constants.LEN_VALUES && max !== constants.ZERO && (
           <Range

@@ -6,7 +6,7 @@ import Range from "../../components/range/range.component";
 // Constants
 import constants from "./constants/normal-range.constants";
 // Styles
-import { Wrapper } from "./normal-range.component.styled";
+import { Wrapper, Title } from "./normal-range.component.styled";
 // Hooks
 import useRangeHook from "./hooks/normal-range.hook";
 
@@ -15,6 +15,10 @@ const NormalRange = () => {
 
   return (
     <Wrapper>
+      <Title>
+        {constants.TITLE}
+        <hr />
+      </Title>
       <Box>
         {value.length > constants.LEN_VALUES &&
           min !== constants.ZERO &&

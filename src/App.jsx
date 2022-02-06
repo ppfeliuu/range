@@ -1,12 +1,17 @@
+// Vendors
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+// Component
 import NormalRange from "./views/normal-range/normal-range.component";
 import FixedRange from "./views/fixed-range/fixed-range.component";
+// Styles
+import { Wrapper } from "./App.styled";
 
 export default function App() {
   return (
-    <div>
+    <Wrapper>
       <nav>
+        <div>Select an option:</div>
         <ul>
           <li>
             <Link to="/normal">Normal Range</Link>
@@ -22,6 +27,6 @@ export default function App() {
         <Route path="/normal" element={<NormalRange />} />
         <Route path="/fixed" element={<FixedRange />} />
       </Routes>
-    </div>
+    </Wrapper>
   );
 }

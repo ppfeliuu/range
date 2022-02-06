@@ -1,3 +1,7 @@
 .MuiSlider-thumbColorPrimary::after {
     pointer-events: visible !important;
 }
+
+.MuiSlider-colorPrimary {
+    color: black !important;
+}
